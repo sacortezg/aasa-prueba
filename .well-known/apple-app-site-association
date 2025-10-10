@@ -36,6 +36,21 @@
             "comment": "Matches any URL beginning with /photos/ for CDLP"
           }
         ]
+      },
+      {
+        "appIDs": [
+          "4MAZ6PN72R.com.xcaret.xcaretevents"
+        ],
+        "components": [
+          {
+            "/": "/event/*",
+            "comment": "Matches any URL beginning with /event/ for events"
+          },
+          {
+            "/": "/photos/*",
+            "comment": "Matches any URL beginning with /photos/ for events"
+          }
+        ]
       }
     ]
   },
