@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirección Dinámica</title>
-    <link rel="stylesheet" href="/assets/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirección Dinámica</title>
+  <link rel="stylesheet" href="/assets/style.css">
+
+  <meta name="apple-itunes-app"
+        content="app-id=1165654955, app-argument=https://universal-x.netlify.app/event/123">
 </head>
 <body>
-    <script src="/assets/config.js"></script>
-    <script src="/assets/script.js"></script>
+
+  <div id="smart-banner" class="smart-banner" style="display:none;">
+    <div class="sb-content">
+      <img class="sb-icon" src="/assets/app-icon.png" alt="App Icon">
+      <div class="sb-text">
+        <div class="sb-title">Xcaret App</div>
+        <div class="sb-desc">Abre esta experiencia directamente en la app</div>
+      </div>
+      <div class="sb-actions">
+        <a id="sb-open" class="sb-btn sb-open" href="#">Abrir</a>
+        <button id="sb-close" class="sb-btn sb-close">×</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/assets/config.js"></script>
+  <script src="/assets/script.js"></script>
 </body>
 </html>
