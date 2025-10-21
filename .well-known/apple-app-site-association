@@ -6,7 +6,7 @@
         "appIDs": [
           "4MAZ6PN72R.com.xcaret.hotelxcaretmexico"
         ],
-	"appID": "4MAZ6PN72R.com.xcaret.hotelxcaretmexico",
+        "appID": "4MAZ6PN72R.com.xcaret.hotelxcaretmexico",
         "components": [
           {
             "/": "/producto/*",
@@ -49,6 +49,36 @@
           {
             "/": "/photos/*",
             "comment": "Matches any URL beginning with /photos/ for events"
+          }
+        ]
+      },
+      {
+        "appIDs": [
+          "4MAZ6PN72R.mx.com.experienciasxcaret.XCARET-"
+        ],
+        "components": [
+          {
+            "/": "/park/*",
+            "comment": "Matches any URL beginning with /park/ for xcaret app"
+          },
+          {
+            "/": "/photos/*",
+            "comment": "Matches any URL beginning with /photos/ for xcaret app"
+          }
+        ]
+      },
+      {
+        "appIDs": [
+          "4MAZ6PN72R.com.xcaret.Ferries"
+        ],
+        "components": [
+          {
+            "/": "/ferry/*",
+            "comment": "Matches any URL beginning with /ferry/ for ferry app"
+          },
+          {
+            "/": "/photos/*",
+            "comment": "Matches any URL beginning with /photos/ for ferry app"
           }
         ]
       }

@@ -40,6 +40,34 @@ const appConfigs = {
             customUrl: 'https://www.xcaret.com/es/' 
         },
         deepLinkScheme: 'https://universal-x.netlify.app/' 
+    },
+    app4: {
+        android: {
+            package: 'com.xcaret.xcaret_ferries',
+            playStoreUrl: 'https://play.google.com/store/apps/details?id=com.xcaret.xcaret_ferries'
+        },
+        ios: {
+            bundleId: 'com.xcaret.Ferries',
+            appStoreUrl: 'hhttps://apps.apple.com/mx/app/ferry-xcaret/id1610417142'
+        },
+        desktop: {
+            customUrl: 'https://www.xcaret.com/es/' 
+        },
+        deepLinkScheme: 'https://universal-x.netlify.app/' 
+    },
+    app5: {
+        android: {
+            package: 'com.xcaret.xcaretevents',
+            playStoreUrl: 'https://play.google.com/store/apps/details?id=com.xcaret.xcaretevents'
+        },
+        ios: {
+            bundleId: 'mx.com.experienciasxcaret.XCARET-',
+            appStoreUrl: 'https://apps.apple.com/mx/app/xcaret/id1165654955'
+        },
+        desktop: {
+            customUrl: 'https://www.xcaret.com/es/' 
+        },
+        deepLinkScheme: 'https://universal-x.netlify.app/' 
     }
 };
 

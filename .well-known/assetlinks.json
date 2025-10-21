@@ -1,41 +1,54 @@
 [
-    {
-        "relation": [
-            "delegate_permission/common.handle_all_urls"
-        ],
-        "target": {
-            "namespace": "android_app",
-            "package_name": "com.xcaret.xcaret_parques",
-            "sha256_cert_fingerprints": ["
-            de:a7:f1: 18:f1:ac: 19: 42: 00: 02: 41:c8:f0: 12:ae: 84: 88: 32: 7f:8e:ad:d5: 23:f7: 1f:c7: 7b:f7: 80: 41: 8f:cc,
-                78: 88:a2:a2:ba: 0b:fd:ad: 97: 81: 1a: 10: 9a: 1b:c2:ba: 59: 42: 25:bd: 1a:b3:b5:3e:f1:d7:f3: 77: 33:bb: 65:ec
-            "]
-            }
-        },
-        {
-            "relation": [
-                "delegate_permission/common.handle_all_urls"
-            ],
-            "target": {
-                "namespace": "android_app",
-                "package_name": "com.xcaret.xcaret_hotel",
-                "sha256_cert_fingerprints": [
-                    "B1:C4:61:45:D2:BC:24:39:91:7E:23:5B:8F:AE:4E:61:D0:94:56:47:6A:C9:A3:4F:08:3A:4E:60:A2:CE:84:51",
-                    "D1:2E:0A:70:52:2A:B4:82:82:95:17:B9:2C:A4:60:25:16:93:9A:1A:96:A5:82:A3:09:40:F1:D3:EF:B8:07:F9"
-                ]
-            }
-        },
-        {
-            "relation": [
-                "delegate_permission/common.handle_all_urls"
-            ],
-            "target": {
-                "namespace": "android_app",
-                "package_name": "com.xcaret.xcaret_cdlp",
-                "sha256_cert_fingerprints": ["
-            e0: 2d:3e: 1f: 2f:c2:a2: 82: 3c:d5: 23: 3d:df:f8: 8b: 26: 38:a1: 5f: 7b: 04:bc: 6c:ed:0e:fc: 87:c1:b2: 51: 69: 77,
-                    26:1e: 90: 2a:ef:a7: 37: 73:ab: 52:c9:e5: 17:d9: 59:fb:a5: 68:bc: 89:b9: 96: 4a: 5b: 8d:b7:f6: 25: 2a: 5c: 7c:c3
-            "]
-                }
-            }
-        ]
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.xcaret.xcaret_parques",
+      "sha256_cert_fingerprints": [
+        "DE:A7:F1:18:F1:AC:19:42:00:02:41:C8:F0:12:AE:84:88:32:7F:8E:AD:D5:23:F7:1F:C7:7B:F7:80:41:8F:CC",
+        "78:88:A2:A2:BA:0B:FD:AD:97:81:1A:10:9A:1B:C2:BA:59:42:25:BD:1A:B3:B5:3E:F1:D7:F3:77:33:BB:65:EC"
+      ]
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.xcaret.xcaret_hotel",
+      "sha256_cert_fingerprints": [
+        "B1:C4:61:45:D2:BC:24:39:91:7E:23:5B:8F:AE:4E:61:D0:94:56:47:6A:C9:A3:4F:08:3A:4E:60:A2:CE:84:51",
+        "D1:2E:0A:70:52:2A:B4:82:82:95:17:B9:2C:A4:60:25:16:93:9A:1A:96:A5:82:A3:09:40:F1:D3:EF:B8:07:F9"
+      ]
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.xcaret.xcaret_cdlp",
+      "sha256_cert_fingerprints": [
+        "26:1E:90:2A:EF:A7:37:73:AB:52:C9:E5:17:D9:59:FB:A5:68:BC:89:B9:96:4A:5B:8D:B7:F6:25:2A:5C:7C:C3",
+        "BF:EE:5A:AB:E1:43:6C:43:25:AA:2F:F6:3A:76:6F:2E:09:7B:91:51:E7:36:F5:E3:5F:AB:81:60:87:8B:36:E9"
+      ]
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.xcaret.xcaretevents",
+      "sha256_cert_fingerprints": [
+        "74:A0:1B:51:74:1D:D2:A4:8F:C3:DC:9A:D7:13:9A:EE:09:4D:3C:CE:0A:A5:C2:C2:4E:94:75:83:15:E8:A7:16",
+        "78:88:A2:A2:BA:0B:FD:AD:97:81:1A:10:9A:1B:C2:BA:59:42:25:BD:1A:B3:B5:3E:F1:D7:F3:77:33:BB:65:EC"
+      ]
+    }
+  }
+]
