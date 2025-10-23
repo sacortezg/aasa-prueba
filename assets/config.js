@@ -68,9 +68,9 @@ const appConfigs = {
             playStoreUrl: 'https://play.google.com/store/apps/details?id=com.xcaret.xcaretevents'
         },
         ios: {
-            bundleId: 'mx.com.experienciasxcaret.XCARET-',
-            appStoreUrl: 'https://apps.apple.com/mx/app/xcaret/id1165654955',
-            appId: '1165654955'
+            bundleId: 'com.xcaret.xcaretevents',
+            appStoreUrl: 'https://apps.apple.com/mx/app/xcaret-events/id1472381976',
+            appId: '1472381976'
         },
         desktop: {
             customUrl: 'https://www.xcaret.com/es/' 
