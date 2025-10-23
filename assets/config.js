@@ -6,7 +6,9 @@ const appConfigs = {
         },
         ios: {
             bundleId: 'mx.com.experienciasxcaret.XCARET-',
-            appStoreUrl: 'https://apps.apple.com/us/app/xcaret/id1165654955'
+            appStoreUrl: 'https://apps.apple.com/us/app/xcaret/id1165654955',
+            appId: '1165654955'
+
         },
         desktop: {
             customUrl: 'https://www.xcaret.com/es/' 
@@ -20,7 +22,9 @@ const appConfigs = {
         },
         ios: {
             bundleId: 'com.xcaret.hotelxcaretmexico',
-            appStoreUrl: 'https://apps.apple.com/us/app/hoteles-xcaret/id1474819420'
+            appStoreUrl: 'https://apps.apple.com/us/app/hoteles-xcaret/id1474819420',
+            appId: '1474819420'
+
         },
         desktop: {
             customUrl: 'https://www.xcaret.com/es/' 
@@ -34,7 +38,8 @@ const appConfigs = {
         },
         ios: {
             bundleId: 'com.xcaret.casadelaplaya',
-            appStoreUrl: 'https://apps.apple.com/us/app/la-casa-de-la-playa/id1619564996'
+            appStoreUrl: 'https://apps.apple.com/us/app/la-casa-de-la-playa/id1619564996',
+            appId: '1619564996'
         },
         desktop: {
             customUrl: 'https://www.xcaret.com/es/' 
@@ -48,7 +53,9 @@ const appConfigs = {
         },
         ios: {
             bundleId: 'com.xcaret.Ferries',
-            appStoreUrl: 'hhttps://apps.apple.com/mx/app/ferry-xcaret/id1610417142'
+            appStoreUrl: 'hhttps://apps.apple.com/mx/app/ferry-xcaret/id1610417142',
+            appId: '1610417142'
+
         },
         desktop: {
             customUrl: 'https://www.xcaret.com/es/' 
@@ -62,7 +69,8 @@ const appConfigs = {
         },
         ios: {
             bundleId: 'mx.com.experienciasxcaret.XCARET-',
-            appStoreUrl: 'https://apps.apple.com/mx/app/xcaret/id1165654955'
+            appStoreUrl: 'https://apps.apple.com/mx/app/xcaret/id1165654955',
+            appId: '1165654955'
         },
         desktop: {
             customUrl: 'https://www.xcaret.com/es/' 
