@@ -10,25 +10,28 @@
     return;
   }
 
-  // --- NUEVO: Mostrar banner en Safari iOS ---
-  const isIOS = /iphone|ipad|ipod/.test(ua);
-  const isSafari = /safari/i.test(ua) && !/crios|fxios|opr\//i.test(ua);
-  const hasHiddenBanner = localStorage.getItem('hideSmartBanner') === '1';
+  addSmartBannerMeta(config);
 
-  if (isIOS && isSafari && !hasHiddenBanner) {
-    showSmartBanner(config);
-    return; // detener redirección automática
-  }
-
-  // Si no es iOS Safari, continuar con la redirección normal
   redirect();
+
+  function addSmartBannerMeta(config) {
+    const isIOS = /iphone|ipad|ipod/.test(ua);
+    const isSafari = /safari/i.test(ua) && !/crios|fxios|opr\//i.test(ua);
+
+    if (!isIOS || !isSafari) return; // Solo Safari iOS muestra el banner
+
+    const meta = document.createElement('meta');
+    meta.name = 'apple-itunes-app';
+    meta.content = `app-id=${config.ios.appId}, app-argument=${config.deepLinkScheme}`;
+    document.head.appendChild(meta);
+  }
 
   function redirect() {
     if (/android/.test(ua)) {
       attemptDeepLink(config.deepLinkScheme + 'deep-path', () => {
         window.location = config.android.playStoreUrl;
       });
-    } else if (isIOS) {
+    } else if (/iphone|ipad|ipod/.test(ua)) {
       if (isIOSVersionAtLeast(9)) {
         attemptDeepLink(config.deepLinkScheme, () => {
           window.location = config.ios.appStoreUrl;
@@ -50,36 +53,14 @@
 
     setTimeout(() => {
       document.body.removeChild(iframe);
-      if (Date.now() - start < 3000) fallback();
+      if (Date.now() - start < 3000) {
+        fallback();
+      }
     }, 2000);
   }
 
   function isIOSVersionAtLeast(version) {
     const match = ua.match(/os (\d+)_/);
     return match && parseInt(match[1], 10) >= version;
-  }
-
-  // --- Smart Banner personalizado ---
-  function showSmartBanner(config) {
-    const banner = document.getElementById('smart-banner');
-    const openBtn = document.getElementById('sb-open');
-    const closeBtn = document.getElementById('sb-close');
-
-    document.body.classList.add('has-smart-banner');
-    banner.style.display = 'block';
-
-    // Universal Link hacia la app (sin forzar esquema)
-    openBtn.href = config.deepLinkScheme + 'event/123?utm_source=smart_banner';
-
-    openBtn.addEventListener('click', () => {
-      // Universal Link → abrirá la app si está instalada
-      // Safari manejará el fallback automáticamente (no hacer nada aquí)
-    });
-
-    closeBtn.addEventListener('click', () => {
-      banner.style.display = 'none';
-      document.body.classList.remove('has-smart-banner');
-      localStorage.setItem('hideSmartBanner', '1');
-    });
   }
 })();
